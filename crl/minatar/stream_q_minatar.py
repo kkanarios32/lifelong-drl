@@ -170,6 +170,9 @@ def main(
     s, _ = env.reset(seed=seed)
     episode_num = 1
     for t in range(1, total_steps + 1):
+        if (t + 1) % (10**6) == 0:
+            env = CL_envs_func(args.env_name)
+            s_ = env.reset()
         a, is_nongreedy = agent.sample_action(s)
         s_prime, r, terminated, truncated, info = env.step(a)
         agent.update_params(
