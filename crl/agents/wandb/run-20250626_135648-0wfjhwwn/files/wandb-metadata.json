@@ -1,0 +1,43 @@
+{
+  "os": "Linux-6.14.0-22-generic-x86_64-with-glibc2.41",
+  "python": "CPython 3.12.10",
+  "startedAt": "2025-06-26T17:56:49.080709Z",
+  "program": "/home/kellen/Projects/research/cssf/lifelong-drl/crl/agents/stream_q_minatar.py",
+  "codePath": "crl/agents/stream_q_minatar.py",
+  "git": {
+    "remote": "git@github.com:kkanarios32/lifelong-drl.git",
+    "commit": "83a9d0cbbb9ce5a09972aa33e03ac0b5eb62b0a3"
+  },
+  "email": "kellenkk@umich.edu",
+  "root": "/home/kellen/Projects/research/cssf/lifelong-drl/crl/agents",
+  "host": "kellen-pc",
+  "executable": "/home/kellen/Projects/research/cssf/lifelong-drl/.venv/bin/python3",
+  "codePathLocal": "stream_q_minatar.py",
+  "cpu_count": 24,
+  "cpu_count_logical": 32,
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "gpu_count": 1,
+  "disk": {
+    "/": {
+      "total": "3636322861056",
+      "used": "116968861696"
+    }
+  },
+  "memory": {
+    "total": "66048675840"
+  },
+  "cpu": {
+    "count": 24,
+    "countLogical": 32
+  },
+  "gpu_nvidia": [
+    {
+      "name": "NVIDIA GeForce RTX 4090",
+      "memoryTotal": "25757220864",
+      "cudaCores": 16384,
+      "architecture": "Ada",
+      "uuid": "GPU-6348c6cd-a19a-87b2-8002-dbd26144d1c9"
+    }
+  ],
+  "cudaVersion": "12.8"
+}
