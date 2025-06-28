@@ -50,7 +50,7 @@ class StreamQ(nn.Module):
         epsilon_target=0.01,
         epsilon_start=1.0,
         exploration_fraction=0.1,
-        total_steps=5_000_000,
+        total_steps=50_000_000,
         gamma=0.99,
         lamda=0.8,
         kappa_value=2.0,
@@ -254,7 +254,7 @@ if __name__ == "__main__":
     parser.add_argument("--epsilon_start", type=float, default=1.0)
     parser.add_argument("--exploration_fraction", type=float, default=0.2)
     parser.add_argument("--kappa_value", type=float, default=2.0)
-    parser.add_argument("--total_steps", type=int, default=5_000_000)
+    parser.add_argument("--total_steps", type=int, default=50_000_000)
     parser.add_argument("--debug", action="store_true")
     parser.add_argument("--overshooting_info", action="store_true")
     parser.add_argument("--render", action="store_true")

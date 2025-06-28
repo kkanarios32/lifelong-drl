@@ -20,7 +20,7 @@ class BaseEnv(gym.Env):
         self,
         game,
         display_time=50,
-        use_minimal_action_set=True,
+        use_minimal_action_set=False,
         use_minimal_observation=False,
         sticky_action_prob=0.1,
         seed=None,
@@ -79,8 +79,8 @@ class BaseEnv(gym.Env):
 
 
 def CL_envs_cycle(idx):
-    idx = idx % 2
-    all_envs = ["breakout", "space_invaders", "freeway"]
+    idx = idx % 3
+    all_envs = ["space_invaders", "breakout", "freeway"]
     sample_env = all_envs[idx]
     return BaseEnv(
         sample_env,
